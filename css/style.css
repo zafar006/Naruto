@@ -1,0 +1,147 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.container__header {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.logo {
+  font-size: 80px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__inner {
+  border-bottom: 1px solid #000;
+}
+
+.header__inner,
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner .navigation,
+.navigation .navigation {
+  list-style: none;
+  font-size: 24px;
+}
+
+.header__inner .navigation .nav__item,
+.navigation .navigation .nav__item {
+  display: inline-block;
+}
+
+.header__inner .navigation .nav__item:not(:last-child),
+.navigation .navigation .nav__item:not(:last-child) {
+  padding-right: 66px;
+}
+
+.header__inner .navigation .nav__link,
+.navigation .navigation .nav__link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.header__inner .navigation .nav__link::after,
+.navigation .navigation .nav__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 0;
+  left: 0;
+  background-color: black;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.header__inner .navigation .nav__link:hover::after,
+.navigation .navigation .nav__link:hover::after {
+  width: 100%;
+}
+
+.main__section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__section .text {
+  padding-top: 97px;
+}
+
+.main__section .text h2 {
+  font-size: 64px;
+  line-height: 1;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main__images {
+  margin-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 480px;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.main__images .naruto {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+.main__images .sasuke {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+}
